@@ -23,6 +23,9 @@ gem 'bootsnap', '>= 1.4.2', require: false
 gem 'bulma-rails', '~> 0.7.4'
 gem 'bulma-extensions-rails', '~> 1.0.30'
 gem 'devise', '=4.6.1'
+gem 'omniauth', '=1.9.0'
+gem 'omniauth-facebook','=5.0.0'
+
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
