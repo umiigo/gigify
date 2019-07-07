@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  get 'users/dashboard'
   root 'pages#home'
   devise_for :users, 
               path: '',
