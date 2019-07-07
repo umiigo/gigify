@@ -11,8 +11,8 @@
                         <div class="card">
 
                             <!-- Avatar -->
-                            <div class="card-content is-horizontal-center is-flex"></div>
-                              <figure class='image is-128-128'>
+                            <div class="card-content is-horizontal is-center is-flex"></div>
+                              <figure class='image is-128x128'>
                                 <%= image_tag avatar_url(current_user), class: 'is-rounded' %>
                               </figure>
                             <div class="card-content">
@@ -22,9 +22,15 @@
                                   <p class="title-is-5">
                                     <%= current_user.full_name %>
                                   </p>
-                                  <button class="button is-primary is-outlined is-fullwidth">
-                                    Upload Avatar
-                                  </button>
+
+                                  <%= form_for :user, url: users_edit_url(@user), action: :update, method: :post do |f| %>
+                                    <div class="file">
+                                      <label class="button is-primary is-outlined is-fullwidth">
+                                        <%= f.file_field :avatar, class:'file-input', onchange:"this.form.submit()"%>
+                                        <i class="fas fa-upload"></i>&nbsp;&nbsp;&nbsp; Upload Avatar
+                                      </label>
+                                    </div>
+                                  <% end %>
                                 </div>
                                 <hr class="h-10">
                                 
