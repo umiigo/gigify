@@ -20,7 +20,7 @@ end
       about: Faker::Quote.matz,
       password: '123456',
       from: Faker::Address.country,
-      languages: Faker::Nation.language,
+      language: Faker::Nation.language,
       created_at: Date.today
   )
 
