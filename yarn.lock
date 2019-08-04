@@ -672,6 +672,13 @@
   resolved "https://registry.yarnpkg.com/@rails/actioncable/-/actioncable-6.0.0-alpha.tgz#84be50626a43fe431789243c6b13c14f922bf048"
   integrity sha512-hBaruc8FMus0EuLL2LzPHHZpQUHzNrvDzmy9EN03P5K4DQR43FTdksCu77kbx2TrKlrvjnJ1PBbcx87jGotykw==
 
+"@rails/actiontext@^6.0.0-rc1":
+  version "6.0.0-rc2"
+  resolved "https://registry.yarnpkg.com/@rails/actiontext/-/actiontext-6.0.0-rc2.tgz#8aa169cbe43680beebf0bd622248d7c41a2f99ab"
+  integrity sha512-LaAKWegncn9XzHojyyvtTtIcMGLtbEY/zxJ16KNNkk+IL5m1onHbouqT+1Rz6UAD9GXpnLOg2Pu3SLT2i0STJQ==
+  dependencies:
+    "@rails/activestorage" "^6.0.0-alpha"
+
 "@rails/activestorage@^6.0.0-alpha":
   version "6.0.0-alpha"
   resolved "https://registry.yarnpkg.com/@rails/activestorage/-/activestorage-6.0.0-alpha.tgz#6eb6c0f49bcaa4ad68fcd13a750b9a17f76f086f"
@@ -1406,6 +1413,11 @@ builtin-status-codes@^3.0.0:
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/builtin-status-codes/-/builtin-status-codes-3.0.0.tgz#85982878e21b98e1c66425e03d0174788f569ee8"
   integrity sha1-hZgoeOIbmOHGZCXgPQF0eI9Wnug=
+
+bulma-extensions@^6.2.7:
+  version "6.2.7"
+  resolved "https://registry.yarnpkg.com/bulma-extensions/-/bulma-extensions-6.2.7.tgz#f9f4d1478a7ac1606ae8db1e765aa45e3f12bb31"
+  integrity sha512-y3dHsxlCYkuxUg87KKN9H4InM8NCk8tdnrlxLkYak8sd2WQdllg3wP2Nv41lj8X46uPXX2ADP0MO65LlXPHt/Q==
 
 bytes@3.0.0:
   version "3.0.0"
@@ -2325,6 +2337,11 @@ dot-prop@^4.1.1:
   integrity sha512-tUMXrxlExSW6U2EXiiKGSBVdYgtV8qlHL+C10TsW4PURY/ic+eaysnSkwB4kA/mBlCyy/IKDJ+Lc3wbWeaXtuQ==
   dependencies:
     is-obj "^1.0.0"
+
+dropzone@^5.5.1:
+  version "5.5.1"
+  resolved "https://registry.yarnpkg.com/dropzone/-/dropzone-5.5.1.tgz#06e2f513e61d6aa363d4b556f18574f47cf7ba26"
+  integrity sha512-3VduRWLxx9hbVr42QieQN25mx/I61/mRdUSuxAmDGdDqZIN8qtP7tcKMa3KfpJjuGjOJGYYUzzeq6eGDnkzesA==
 
 duplexify@^3.4.2, duplexify@^3.6.0:
   version "3.7.1"
@@ -6639,6 +6656,11 @@ trim-right@^1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/trim-right/-/trim-right-1.0.1.tgz#cb2e1203067e0c8de1f614094b9fe45704ea6003"
   integrity sha1-yy4SAwZ+DI3h9hQJS5/kVwTqYAM=
+
+trix@^1.0.0:
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/trix/-/trix-1.1.1.tgz#ca8a3fab4d23d960a17e88441d601cb22a86f5d5"
+  integrity sha512-dNHTcryRK0EmwCyJDOBrG6OznL8HNEVVlecq/xzxLj3M9Eht5DV4yl+eCYX8RKyfrtBcNki+mpKIxESgXaGGZA==
 
 "true-case-path@^1.0.2":
   version "1.0.3"
