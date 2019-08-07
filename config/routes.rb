@@ -5,6 +5,7 @@ Rails.application.routes.draw do
   get '/users/:id', to: 'users#show'
   get '/selling_orders', to: 'orders#selling_orders'
   get '/buying_orders', to: 'orders#buying_orders'
+  get '/all-requests', to: 'requests#list'
 
   post 'users/edit', to: 'users#update'
 
@@ -18,7 +19,9 @@ Rails.application.routes.draw do
     resources :orders, only: [:create]
   end
 
-  
+  resources :requests 
+
+
   devise_for :users, 
               path: '',
               path_names:{sign_up: 'register', sign_in: 'login', edit: 'profile', sign_out:'logout'},
