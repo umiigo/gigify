@@ -14,31 +14,39 @@
         <div class="field">
           <label class="label">Choose a category (*)</label>
           <div class="select is-fullwidth">
-            <%= f.select(:category_id, options_for_select(@categories.map{|c| [c.name, c.id]})) %>
+            <%= f.select(:categories_id, options_for_select(@categories.map{|c| [c.name, c.id]})) %>
           </div>
-          <div class="field">
-            <label class="label">Delivery</label>
-            <%= f.number_field(:delivery, placeholder: "1-30 days", class="input" %>
+        </div>
+        <div class="field">
+           <label class="label">Delivery</label>
+            <%= f.number_field :delivery, placeholder: "1-30 days", class:"input" %>
+        </div>
+        <div class="field">
+          <label class="label">Budget</label>
+          <%= f.number_field :budget, placeholder: "£5 minimum", class:"input" %>
+        </div>
+        <div class="field">
+          <label class="label">Upload attachment (Optional) </label>
+          <div class="file is-warning has-name">
+            <label class="file-label">
+              <%= f.file_field :attachment_file, class:"file-input" %>
+              <span class="file-cta"><span class="file-label">Choose a file...</span></span>
+              <span class="file-name" id="file-name">No file selected</span>
+            </label>
           </div>
-          <div class="field">
-            <label class="label">Budget</label>
-            <%= f.number_field(:budget, placeholder: "£5 minimum", class="input" %>
-          </div>
-           <div class="field">
-            <label class="label">Upload attachment (Optional) </label>
-            <div class="file is-warning has-name">
-              <label class="field-label">
-                <%= f.file_field :attachment_file, class="file-input" %>
-                <span class="file-cta"><span class="file-label">Choose a file...</span></span>
-                <span class="file-name" id="file-name">No file selected</span>
-              </label>
-            </div>
-          </div>
+        </div>
+        <div class="field has-text-centered">
+          <%= f.submit 'Post request', class:"button is-primary" %>
+        </div>
 
-          <div class="field has-text-centered">
-            <%= f.submit 'Post request', class:"button-is-primary" %>
-          </div>
-        <% end %>
-      </div>
+      <% end %>
     </div>
-  </section>
+  </div>
+</section>
+
+
+
+           
+       
+          
+          
