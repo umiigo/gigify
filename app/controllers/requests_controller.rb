@@ -7,7 +7,7 @@ class RequestsController < ApplicationController
   end
 
   def new
-    @request = current_user.request.build
+    @request = current_user.requests.build
   end
 
   def create
