@@ -1,2 +1,36 @@
-<h1>Requests#new</h1>
-<p>Find me in app/views/requests/new.html.erb</p>
+<section class="section">
+  <div class="container">
+    <div class="form-container">
+      <p class="title is-4 has-text-centered">What services are you looking for?</p>
+      <%= form_for @request do |f| %>
+        <div class="field">
+          <label class="label">Title (*)</label>
+          <%= f.text_field :title, placeholder: "I request ...", class: 'input' %>
+        </div>
+        <div class="field">
+          <label class="label">Description (*)</label>
+          <%= f.text_area :title, placeholder: "I'm looking for ...", class: 'textarea' %>
+        </div>
+        <div class="field">
+          <label class="label">Choose a category (*)</label>
+          <div class="select is-fullwidth">
+            <%= f.select(:category_id, options_for_select(@categories.map{|c| [c.name, c.id]})) %>
+          </div>
+          <div class="field">
+            <label class="label">Delivery</label>
+            <%= f.number_field(:delivery, placeholder: "1-30 days", class="input" %>
+          </div>
+          <div class="field">
+            <label class="label">Budget</label>
+            <%= f.number_field(:budget, placeholder: "£5 minimum", class="input" %>
+          </div>
+           <div class="field">
+            <label class="label">Upload attachment (Optional) </label>
+            <div class="file is-warning has-name">
+              <%= f.field_field :attachment_file, class="file-input" %>
+            </div>
+          </div>
+        <% end %>
+      </div>
+    </div>
+  </section>
