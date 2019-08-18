@@ -27,7 +27,11 @@
            <div class="field">
             <label class="label">Upload attachment (Optional) </label>
             <div class="file is-warning has-name">
-              <%= f.field_field :attachment_file, class="file-input" %>
+              <label class="field-label">
+                <%= f.field_field :attachment_file, class="file-input" %>
+                <span class="file-cta"><span class="file-label">Choose a file...</span></span>
+                <span class="file-name" id="file-name">No file selected</span>
+              </label>
             </div>
           </div>
         <% end %>
